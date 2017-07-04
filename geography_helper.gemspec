@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Eric Iacutone"]
   spec.email         = ["eric.iacutone@gmail.com"]
 
-  spec.summary       = "Hash state, province and country codes."
+  spec.summary       = "Ruby hash state, province and country abbreviations."
   spec.homepage      = "https://github.com/iacutone/geography_helper"
   spec.license       = "MIT"
 
