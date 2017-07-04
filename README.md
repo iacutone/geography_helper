@@ -20,8 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-call `GeographyHelper.states` for a hash of states and provinces
-call `GeographyHelper.countries` for a hash of countries
+call `GeographyHelper::States.new.states` for a hash of nested states
+call `GeographyHelper::States.new.provinces` for a hash of nested provinces
+call `GeographyHelper::Countries.new.countries` for a hash of countries
 
 The gem also provides helper two methods to render state/province and country dropdowns from a Rails select dropdown.
 
