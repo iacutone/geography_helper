@@ -11,9 +11,9 @@ module ActionView
         grouped_options_for_select(state_and_province_options, selected)
       end
 
-      def country_options_for_select
+      def country_options_for_select(selected=nil)
         geography = GeographyHelper::Countries.new
-        geography.countries.invert
+        options_for_select(geography.countries.invert, selected)
       end
     end
   end

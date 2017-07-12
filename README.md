@@ -29,11 +29,12 @@ call `GeographyHelper::Countries.new.countries` for a hash of countries
 ### The gem also provides two helper methods to render state/province and country dropdowns from a Rails select dropdown.
 
 * `country_options_for_select`
+  - this method takes an optional selected argument, 'US' 
 * `state_options_for_select()` 
   - this method takes an optional selected argument, 'NY' 
 
 ``` ruby example.html.erb
-<%= form.select :country, country_options_for_select, {include_blank: true} %>
+<%= form.select :country, country_options_for_select('US'), {include_blank: true} %>
 ```
 
 ## Development
