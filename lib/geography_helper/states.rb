@@ -74,9 +74,9 @@ module GeographyHelper
           'NT' => 'Northwest Territories',
           'NS' => 'Nova Scotia',
           'NU' => 'Nunavut',
+          'ON' => 'Ontario',
           'PE' => 'Prince Edward Island',
           'SK' => 'Saskatchewan',
-          'ON' => 'Ontario',
           'QC' => 'Quebec',
           'YT' => 'Yukon'
         }
