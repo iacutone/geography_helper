@@ -76,8 +76,8 @@ module GeographyHelper
           'NU' => 'Nunavut',
           'ON' => 'Ontario',
           'PE' => 'Prince Edward Island',
-          'SK' => 'Saskatchewan',
           'QC' => 'Quebec',
+          'SK' => 'Saskatchewan',
           'YT' => 'Yukon'
         }
       }
