@@ -1,6 +1,6 @@
 # GeographyHelper
 
-One source of truth for countries both states and provinces. I built this because it is easy to get into the habit of putting an array of arrays of states and countries into `application.rb`. This gem also uses hashes instead of nested arrays, making it easier to call values from a key. This approach is more efficient than looping through an array of arrays to find a correct state or country value. It is also easier to understand, for example, calling `state['NY'] => 'New York'`.
+GeographyHelper stores country, state and province data has Ruby hashes.
 
 ## Installation
 
@@ -20,21 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-call `GeographyHelper::States.new.states` for a hash of nested states
+```ruby
+GeographyHelper::States.new.states # hash of states
+GeographyHelper::States.new.provinces # hash of provinces
+GeographyHelper::Countries.new.countries # hash of countries
 
-call `GeographyHelper::States.new.provinces` for a hash of nested provinces
-
-call `GeographyHelper::Countries.new.countries` for a hash of countries
+GeographyHelper::States.new.states['United States']['NY'] # => "New York"
+```
 
 ### The gem also provides two helper methods to render state/province and country dropdowns from a Rails select dropdown.
 
-* `country_options_for_select`
-  - this method takes an optional selected argument, 'US' 
-* `state_options_for_select()` 
-  - this method takes an optional selected argument, 'NY' 
-
-``` ruby example.html.erb
-<%= form.select :country, country_options_for_select('US'), {include_blank: true} %>
+```ruby
+<%= form.select :country, country_options_for_select('US') %>
+<%= form.select :state, state_options_for_select('NY') %>
 ```
 
 ## Development
